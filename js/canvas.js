@@ -32,7 +32,11 @@ $(function() {
 	
 	function drawBlock(x, y, s, c){
 		canvas.fillStyle = c;
+		//canvas.lineWidth = 1;
+		//canvas.strokeStyle = c;
+		//canvas.lineJoin = 'square';
 		canvas.fillRect(x, y, s, s);
+		//canvas.stroke();
 
 		//console.log("Drawing block: x:" + x + " y:" + y + " s:" + s + " c:" + c);
 	}
