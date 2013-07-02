@@ -1,0 +1,132 @@
+@import 'bourbon';
+@import "font-sizer";
+@import "normalize.css";
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+/*=============================
+	Fonts
+===============================*/
+@font-face {
+	font-family: 'novecento_widemedium';
+	src: url('../fonts/novecentowide-medium-webfont.eot');
+	src: url('../fonts/novecentowide-medium-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/novecentowide-medium-webfont.woff') format('woff'),
+		 url('../fonts/novecentowide-medium-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+
+}
+@font-face {
+	font-family: 'novecento_widenormal';
+	src: url('../fonts/novecentowide-normal-webfont.eot');
+	src: url('../fonts/novecentowide-normal-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/novecentowide-normal-webfont.woff') format('woff'),
+		 url('../fonts/novecentowide-normal-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 62.5%; /* Causes base font size to be ~10px */
+	font-family: 'Open Sans', sans-serif;
+}
+body{
+	background: #eee;
+}
+h1{
+	margin-bottom: 20px;
+	font-weight: 300;
+	color: #bababa;
+	> a,
+	  a:visited{
+		text-decoration: none;
+	}
+}
+.page-header{
+	width: 340px;
+	padding: 30px 40px;
+	margin: 0 auto;
+	text-align: center;
+	@include box-sizing(border-box);
+}
+.wrapper{
+	width: 100%;
+}
+.content{
+	width: 300px;
+	padding: 20px;
+	margin: 0 auto;
+	background: #fff;
+	border-radius: 5px;
+	@include box-shadow(0 3px 10px rgba(0, 0, 0, .3));
+}
+p{
+	margin-bottom: 24px;
+	@include font-size(16);
+	color: #4e4d4d;
+	text-align: center;
+}
+#canvas{
+	margin: 0 auto 50px auto;
+}
+/*=============================
+	Ident
+===============================*/
+.block{
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+textarea{
+	width: 100%;
+	padding: 15px 20px;
+	background: #444;
+	border: 1px solid #ccc;
+	color: #fff;
+	@include box-sizing(border-box);
+	@include font-size(14);
+	@include line-height(14, 24);
+	font-family: monospace;
+}
+.submit,
+.reload{
+	width:100%;
+	margin-bottom: 30px;
+	line-height: 50px;
+	background: #00a2a0;
+	border: none;
+	font-family: 'novecento_widenormal';
+	@include font-size(16);
+	color: #fff;
+
+	&:hover{
+		background: #307878;
+	}
+}
+.reload{
+	background: #e7e5e5;
+	color: #00a2a0;
+	&:hover{
+		background: #3c3b3b;
+	}
+}
+.code{
+	background: #ccc;
+	border: red;
+}
+/*==========================
+	Helper classes
+============================*/
+.group:before,
+.group:after {
+	content: " ";
+	display: table;
+}
+.group:after {
+	clear: both;
+}
+.group {
+	*zoom: 1;
+}

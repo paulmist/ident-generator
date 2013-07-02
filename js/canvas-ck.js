@@ -1,0 +1,1 @@
+$(function(){function e(e,t){return Math.floor(Math.random()*(t-e+1))+e}var t=["#4b727f","#7da3ac","#444444","#594e70","#6c6b6b","#9c89ba","#00a2a0","#a5478e"],n=document.getElementById("canvas").getContext("2d")});
