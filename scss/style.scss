@@ -35,7 +35,8 @@ html{
 body{
 	background: #eee;
 }
-h1{
+h1,
+h3{
 	margin-bottom: 20px;
 	font-weight: 300;
 	color: #bababa;
@@ -43,6 +44,12 @@ h1{
 	  a:visited{
 		text-decoration: none;
 	}
+}
+h3{
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'novecento_widenormal';
+	@include font-size(16);
 }
 .page-header{
 	width: 340px;
@@ -91,7 +98,8 @@ textarea{
 	font-family: monospace;
 }
 .submit,
-.reload{
+.reload,
+#png-download{
 	width:100%;
 	margin-bottom: 30px;
 	line-height: 50px;
@@ -100,7 +108,9 @@ textarea{
 	font-family: 'novecento_widenormal';
 	@include font-size(16);
 	color: #fff;
-
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
 	&:hover{
 		background: #307878;
 	}
@@ -115,6 +125,29 @@ textarea{
 .code{
 	background: #ccc;
 	border: red;
+}
+.image-form{
+	width: 100%;
+	padding: 20px;
+	margin-bottom: 30px;
+	background: #eee;
+	@include box-sizing(border-box);
+
+	input{
+		width: 90%;
+		padding: 5%;
+		margin-bottom: 5px;
+		border: none;
+		line-height: 30px;
+		@include font-size(18);
+		text-align: center;
+
+		@include box-shadow(inset 0 3px 0 rgba(0, 0, 0, .3));
+	}
+
+	#png-download{
+		margin-bottom: 0;
+	}
 }
 /*==========================
 	Helper classes

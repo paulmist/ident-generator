@@ -92,9 +92,27 @@ $(function() {
 		}
 	}
 	
-	//var xml = context.toDataURL( 'image/svg+xml' );
-	//console.log(xml);
-
-	//document.getElementById('svg').innerHTML = canvas.toDataURL("image/svg+xml");
 	$('#output').val(canvas.toDataURL("image/svg+xml"));
+	
+	var icanvas = document.getElementById("canvas");
+	//var ic = icanvas.toDataURL("image/png");
+	//$('#png-download').attr('href', ic);
+	//$('#png-download').attr('download', 'ident.png');
+	
+	$('#png-download').click(
+		function(e){
+			var cw;
+			var ch;
+			if($('#img-width').val()){
+				cw = $('#img-width').val();
+				ch = (250/300) * cw;
+			} else {
+				cw = 300;
+				ch = 250;
+			}
+			e.preventDefault();
+			Canvas2Image.saveAsPNG(icanvas, false, cw, ch);
+		}
+		);
+
 });
