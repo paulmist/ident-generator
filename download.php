@@ -1,6 +1,6 @@
 <?php
 
-$data = (string)$_POST['addition'];
+$data = $_POST['addition'];
 header("Content-type: application/csv");
 header("Content-Disposition: attachment; filename='ident.svg'");
 header("Pragma: no-cache");
