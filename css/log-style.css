@@ -1,0 +1,70 @@
+@import url(normalize.css);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%;
+  /* Causes base font size to be ~10px */
+  font-family: sans-serif; }
+
+body {
+  padding-top: 20px;
+  font-size: 1.6rem;
+  background-color: #fafafa; }
+
+.log-entry {
+  width: 50%;
+  margin: -0px auto 20px auto;
+  padding: 15px 20px;
+  background-color: #fff;
+  font-size: 14px;
+  font-size: 1.4rem;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1); }
+
+h3 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  position: relative; }
+  h3:before {
+    content: "\f024";
+    font-family: FontAwesome;
+    font-size: 16px;
+    font-size: 1.6rem;
+    color: #00a2a0;
+    display: block;
+    position: absolute;
+    left: -28px; }
+
+.meta {
+  font-size: 12px;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #ccc; }
+
+.time {
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-size: 1.2rem;
+  color: #00a2a0;
+  position: relative; }
+  .time:before {
+    content: "\f017";
+    font-family: FontAwesome;
+    font-size: 16px;
+    font-size: 1.6rem;
+    color: #00a2a0;
+    display: block;
+    position: absolute;
+    top: -3px;
+    left: -28px; }
+
+.subject {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-family: monospace;
+  font-weight: bold; }
+
+.description {
+  font-family: serif; }
